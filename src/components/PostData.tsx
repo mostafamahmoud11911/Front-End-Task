@@ -35,7 +35,7 @@ export default function PostData() {
       <h1 className="text-2xl">{edit ? 'Edit Post' : 'Add Post'}</h1>
 
 
-      <form onSubmit={onSubmit} className="md:w-[600px] w-full mx-auto flex flex-col gap-4">
+      <form onSubmit={onSubmit} className="md:w-[600px] w-full mx-auto flex flex-col gap-4 px-3">
         <div className="flex flex-col">
           <label htmlFor="title">Title</label>
           <input type="text" ref={title} defaultValue={edit ? state?.post?.title : null} className="border-2 border-gray-600 rounded-md px-2 py-1 " placeholder="title" />
